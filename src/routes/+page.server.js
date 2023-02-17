@@ -2,7 +2,7 @@ import { BYPASS_TOKEN } from '$env/static/private';
 
 export const config = {
   isr: {
-    expiration: false,
+    expiration: 30,
     bypassToken: BYPASS_TOKEN,
   }
 };
