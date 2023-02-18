@@ -1,4 +1,5 @@
 import { BYPASS_TOKEN } from '$env/static/private';
+import { nanoid } from "nanoid";
 
 export const config = {
   isr: {
@@ -7,10 +8,12 @@ export const config = {
   }
 };
 
-export const prerender = true;
-
-export const load = () => {
+export async function load({ setHeaders }) {
   console.log("Server load");
-  let timestamp = new Date();
-  return { timestamp };
+  setHeaders({
+    "cache-control": "max-age=31536000",
+  });
+
+  let uuid = nanoid();
+  return { uuid };
 }
