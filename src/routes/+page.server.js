@@ -7,8 +7,6 @@ export const config = {
   }
 };
 
-export const prerender = 'auto';
-
 export const load = () => {
   console.log("Server load");
   let timestamp = new Date();
