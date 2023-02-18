@@ -9,11 +9,19 @@
 		},
 		{
 			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		},
+		{
+			"src": "^/?$",
+			"dest": "/__root__?__pathname=/"
+		},
+		{
+			"src": "^/?/__data.json$",
+			"dest": "/__root__/__data.json?__pathname=/"
 		}
 	],
-	"overrides": {
-		"index.html": {
-			"path": ""
-		}
-	}
+	"overrides": {}
 }
