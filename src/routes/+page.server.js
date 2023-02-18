@@ -7,7 +7,7 @@ export const config = {
   }
 };
 
-export const prerender = false;
+export const prerender = 'auto';
 
 export const load = () => {
   console.log("Server load");
