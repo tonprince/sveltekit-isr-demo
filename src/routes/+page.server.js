@@ -11,7 +11,7 @@ export const config = {
 export async function load({ setHeaders }) {
   console.log("Server load");
   setHeaders({
-    "cache-control": "max-age=31536000",
+    "cache-control": "max-age=604800, must-revalidate",
   });
 
   let uuid = nanoid();
