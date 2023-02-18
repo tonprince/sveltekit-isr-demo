@@ -1,4 +1,4 @@
-const BYPASS_TOKEN = "XYZ";
+const BYPASS_TOKEN = "430ba799-c91e-4343-bf58-c28b7d380ef4";
 const config = {
   isr: {
     expiration: 30,
