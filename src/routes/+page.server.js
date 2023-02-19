@@ -8,11 +8,10 @@ export const config = {
   }
 };
 
-export async function load({ setHeaders }) {
+export const prerender = true;
+
+export async function load() {
   console.log("Server load");
-  setHeaders({
-    "cache-control": "max-age=604800, must-revalidate",
-  });
 
   let uuid = nanoid();
   return { uuid };
