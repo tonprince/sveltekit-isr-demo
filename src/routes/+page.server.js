@@ -11,9 +11,9 @@ export const config = {
 export const csr = false;
 export const prerender = 'auto';
 
-export async function load() {
+export async function load({ params }) {
   console.log("Server load");
 
   let uuid = nanoid();
-  return { uuid };
+  return { uuid , params.name};
 }
