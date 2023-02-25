@@ -15,5 +15,5 @@ export async function load({ params }) {
   console.log("Server load");
 
   let uuid = nanoid();
-  return { uuid , params.name};
+  return { uuid , name: params.name};
 }
