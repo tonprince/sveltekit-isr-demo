@@ -8,6 +8,7 @@ export const config = {
   }
 };
 
+export const csr = false;
 export const prerender = 'auto';
 
 export async function load() {
