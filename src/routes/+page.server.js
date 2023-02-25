@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 
 export const config = {
   isr: {
-    expiration: 30,
+    expiration: false,
     bypassToken: BYPASS_TOKEN,
   }
 };
