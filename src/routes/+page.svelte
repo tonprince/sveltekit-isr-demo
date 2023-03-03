@@ -6,5 +6,5 @@
 <p>
   Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
 </p>
-<p>UUID generated from load function: {data.uuid}</p>
-<p>BYPASS TOKEN to invalidate route: {data.byPassToken}</p>
+<p>UUID generated from load function: <strong>{data.uuid}</strong></p>
+<p>BYPASS TOKEN to invalidate route: <strong>{data.byPassToken}</strong></p>
