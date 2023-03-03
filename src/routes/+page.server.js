@@ -10,9 +10,8 @@ export const config = {
 
 export const prerender = 'auto';
 
-export async function load({ params }) {
-  console.log("Server load");
-
+export async function load() {
   let uuid = nanoid();
-  return { uuid, name: params.name };
+  console.log(`Load function triggered with new UUID ${uuid}`);
+  return { uuid };
 }
