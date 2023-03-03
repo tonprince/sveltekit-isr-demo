@@ -13,5 +13,5 @@ export const prerender = 'auto';
 export async function load() {
   let uuid = nanoid();
   console.log(`Load function triggered with new UUID ${uuid}`);
-  return { uuid };
+  return { uuid, byPassToken: BYPASS_TOKEN };
 }
