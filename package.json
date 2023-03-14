@@ -1,6 +1,6 @@
 {
 	"name": "sveltekit-isr-demo",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -13,7 +13,7 @@
 		"@sveltejs/adapter-vercel": "^2.3.1",
 		"@sveltejs/kit": "^1.11.0",
 		"svelte": "^3.56.0",
-		"svelte-check": "^3.1.2",
+		"svelte-check": "^3.1.4",
 		"typescript": "^4.9.5",
 		"vite": "^4.1.4"
 	},
