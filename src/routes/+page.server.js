@@ -8,8 +8,6 @@ export const config = {
   }
 };
 
-export const prerender = 'auto';
-
 export async function load() {
   let uuid = nanoid();
   console.log(`Load function triggered with new UUID ${uuid}`);
